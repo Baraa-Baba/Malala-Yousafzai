@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./glide.core.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    <img src="./assets/nobel.webp" id="header-image" alt="Malala holding a Mike" />
+    <img src="./assets/Malala_Mike.jpg" class='second-image' alt="">
+    <h1 class="main-text">malala yousafzai</h1>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides">
+            <q class='glide__slide'>I tell my story not because it is unique, 
+                but because it is the story of many girls.</q>
+            <q class='glide__slide'>One child, one teacher, one pen, 
+                and one book can change the world.</q>
+            <q class='glide__slide'>Some people only ask others to do something.  
+                I believe that, why should I wait for someone else?  
+                Why dont I take a step and move forward?</q>
+                <q class='glide__slide'>I truly believe the only way 
+                    we can create global peace  is through not only educating our minds, 
+                    but our hearts and our souls.</q>
+                <q class='glide__slide'>Let us make our future now,  
+                    and let us make our dreams tomorrows reality.</q>
+                <q class='glide__slide'>We want schools and education for every childs 
+                    bright future. We will continue our journey
+                     to our destination of peace and education for everyone.</q>
+                </div>
+
+                <div data-glide-el="controls">
+                    <button class="control-buttons" data-glide-dir="<">&#60;</button>
+                    <button class="control-buttons" data-glide-dir=">">&#62;</button>
+                  </div>
+        </div>
+      </div>
+    </div>
+    <script src="./glide.min.js"></script>
+    <script>
+        new Glide('.glide',{
+            type: 'carousel',
+  startAt: 0,
+  perView: 1,
+  autoplay:5000
+        }).mount()
+        </script>
+    <script src="./script.js"></script>
+</body>
+</html>
