@@ -45,23 +45,14 @@ html,body{
     display: inline-block;
     color:black;
 }
-.second-image{
-    display: none;
-    position: absolute;
-    width: 100vw;
-}
 @media only screen and (max-width: 600px){
-    #header-image{
-        display: none;
-    }
 .main-text{
     font-size: 3rem;
-}  
-.second-image{
-    display: block;
+} 
+.glide{
+    top: 4rem;
 }
 .glide__slide{
     font-size: 2rem;
-    color:white;
 }
 }
