@@ -1,0 +1,67 @@
+html,body{
+    padding:0 0 0 0;
+    margin: 0 0 0 0;
+}
+.main-text{
+    font-size: 6rem;
+    color:white;
+    margin: 0;
+    z-index: 1000;
+    padding: 0;
+    position: absolute;
+}  
+#header-image{
+   width:100%;
+   height:auto;
+   image-rendering: smooth;
+   object-fit:cover;
+   position: absolute;
+}
+.control-buttons{
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    opacity: 0.5;
+    transition: all 2s ease;
+}
+.control-buttons:hover{
+    opacity: 0.9;
+}
+.glide{
+    top: 8rem;
+    max-width: 30rem;
+}
+
+.glide__slide{
+    max-width: 30rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+    width: 5rem;
+    display: inline-block;
+    color:black;
+}
+.second-image{
+    display: none;
+    position: absolute;
+    width: 100vw;
+}
+@media only screen and (max-width: 600px){
+    #header-image{
+        display: none;
+    }
+.main-text{
+    font-size: 3rem;
+}  
+.second-image{
+    display: block;
+}
+.glide__slide{
+    font-size: 2rem;
+    color:white;
+}
+}
