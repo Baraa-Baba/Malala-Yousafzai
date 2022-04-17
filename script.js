@@ -1,14 +1,16 @@
-window.addEventListener('scroll', () => {
-    const target = document.querySelectorAll('.scroll');
-    var index = 0, length = target.length;
-    for (index; index < length; index++) {
-        var pos = window.pageYOffset + target[index].dataset.rate;
-        if (target[index].dataset.direction === 'vertical') {
 
-            target[index].style.transform = 'translate3d(@px,' + pos + 'px, @px)';
-        } else
-            var posx = window.pageYOffset * target[index].dataset.ratex;
-        var posy = window.pageYOffset * target[index].dataset.ratey;
-        target[index].style.transform = 'translate3d(' + posx + 'px' + posy + 'px, 0px)';
-    }
+let path = document.querySelector('path')
+let pathLenghth = path.getTotalLength()
+
+path.style.strokeDasharray = pathLenghth + ' ' + pathLenghth
+
+path.style.strokeDashoffset = pathLenghth
+window.addEventListener('scroll', () => {
+    //what % down is it
+    var scrollPercentage = (document.documentElement.scrollTo + document.body.scrollTo)
+    //length to offset dahes
+    var drawLenght = pathLenghth * scrollPercentage
+    //draw in reverse
+    path.style.strokeDashoffset = pathLenghth - drawLenght
+
 })
