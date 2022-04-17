@@ -1,16 +1,32 @@
-
+/*
 let path = document.querySelector('path')
-let pathLenghth = path.getTotalLength()
+let pathLength = path.getTotalLength()
 
-path.style.strokeDasharray = pathLenghth + ' ' + pathLenghth
-
-path.style.strokeDashoffset = pathLenghth
 window.addEventListener('scroll', () => {
     //what % down is it
     var scrollPercentage = (document.documentElement.scrollTo + document.body.scrollTo)
     //length to offset dahes
-    var drawLenght = pathLenghth * scrollPercentage
+    var drawLenght = pathLength * scrollPercentage
     //draw in reverse
-    path.style.strokeDashoffset = pathLenghth - drawLenght
+    path.style.strokeDashoffset = pathLength - drawLenght
 
 })
+*/
+
+
+var About = document.getElementById('main-about')
+const callback = entries => {
+    const [entry] = entries
+    if (entry.isIntersecting) {
+        About.style.opacity = '1'
+    } else {
+        About.style.opacity = '0'
+    }
+}
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+}
+const observer = new IntersectionObserver(callback, options)
+if (About) observer.observe(About)
