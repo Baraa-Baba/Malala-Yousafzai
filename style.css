@@ -3,11 +3,16 @@ html,body{
     margin: 0 0 0 0;
     max-width: 100vw;
 }
+body, html {
+    height: 100%;
+  }
 body{
     max-width: 100vw;
-    overflow-x: hidden;
     font-weight:700;
-    background:linear-gradient(brown,rgb(59, 9, 9))
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    background: #282E34
 }
 #main-about{
     opacity: 0;
@@ -18,8 +23,8 @@ body{
     position: absolute;
 }
 .header{
-    height:100vh;
     margin-bottom: 10vh;
+    height:100vh;
 }
 .main-text{
     font-size: 6rem;
@@ -33,10 +38,18 @@ body{
     width: 100vw;
     display: grid;
     place-items: center;
-    height: 80vh;
     background-image: url(./assets/Malala_garden.webp);
     background-repeat: no-repeat;
-    margin-bottom: 30vh;
+    /* The image used */
+  
+    /* Set a specific height */
+    min-height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-size: cover;
 }
 .about-cont{
@@ -60,6 +73,37 @@ body{
     padding-bottom: 0;
     font-size: 4rem;
     color:white;
+}
+.baby{
+    background-image: url(./assets/Malala-baby.jpg);
+}
+.school{
+    background-image: url(./assets/Malala_school\ \(1\).jpg);
+}
+.shot{
+    background-image: url(./assets/shot.webp);
+}
+.nobel{
+    background-image: url(./assets/nobelcrop.webp);
+}
+.grad{
+    background-image: url(./assets/gradution.webp);
+}
+.marriage{
+    background-image: url(./assets/marriage.webp);
+}
+.parralex{
+    display: grid;
+    place-items: center;
+    /* Set a specific height */
+    min-height: 100vh;
+    width: 100vw;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
 }
 #header-image{
    width: 120vw;
@@ -103,8 +147,6 @@ body{
 }
 .baby-cont{
     display: flex;
-    background-color: rgb(255,163,26);
-    margin-bottom: 30vh;
     margin-right: 10rem; 
 }
 .baby-image{
@@ -122,21 +164,29 @@ body{
 }
 .story-text-cont{
     display: inline-block;
+    background-color: #282E34;
 }
 .story-header{
-    font-size: 3rem;
+    color: white;
+    background-color: rgba(200, 200, 200,0.8);
+    font-size: 4rem;
     font-weight: 800;
     margin: 0;
     padding: 0;
 }
 .story-text{
-    font-size: 2rem;
+    font-size: 3rem;
+    color: #ddd;
 }
-.school-cont{
-    background-color: rgb(255,163,26);
-    display: flex;
-    margin-bottom: 30vh;
-    margin-left: 20rem;
+.story-int{
+    height: 30vh;
+    width: 100vw;
+    background-color: #282E34;
+}
+.story-some{
+    font-size: 5rem;
+    color: #ddd;
+    text-align: center;
 }
 .school-image{
     min-width: 30vw;
