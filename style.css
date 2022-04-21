@@ -23,16 +23,18 @@ body{
     position: absolute;
 }
 .header{
-    margin-bottom: 10vh;
+    margin: 0 auto 10vh auto;
     height:100vh;
+    display: block;
+    background-image: url(./assets/nobel.webp);
 }
 .main-text{
+
     font-size: 6rem;
     color:white;
     margin: 0;
     z-index: 1000;
     padding: 0;
-    position: absolute;
 }  
 .about-bg{
     width: 100vw;
@@ -92,9 +94,11 @@ body{
 .marriage{
     background-image: url(./assets/marriage.webp);
 }
-.parralex{
+.center{
     display: grid;
     place-items: center;
+}
+.parralex{
     /* Set a specific height */
     min-height: 100vh;
     width: 100vw;
@@ -104,14 +108,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-size: cover;
-}
-#header-image{
-   width: 120vw;
-   object-fit: cover;
-   height:100vh;
-   image-rendering: smooth;
-   object-fit:cover;
-   position: absolute;
 }
 .controls{
     display: flex;
@@ -135,8 +131,8 @@ body{
     opacity: 0.9;
 }
 .glide{
-    top: 8rem;
     max-width: 40rem;
+    margin: 0;
 }
 .glide__slide{
     max-width: 40rem;

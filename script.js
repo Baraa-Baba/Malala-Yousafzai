@@ -12,8 +12,10 @@ window.addEventListener('scroll', () => {
 
 })
 */
-
-
+$(".parralex").lazy({
+    effect: "fadeIn",
+    effectTime: 1500
+});
 var About = document.getElementById('main-about')
 const callback = entries => {
     const [entry] = entries
